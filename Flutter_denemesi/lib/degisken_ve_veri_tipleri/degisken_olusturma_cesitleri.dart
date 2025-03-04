@@ -21,13 +21,13 @@ void main(){
   print(carpma);//değişkenlerin sonuçları başka değişkenlere aktarılabilir
 
   //Örnek3:
-  var sonuc1;//boş değişken bütün değişkenler için geçerli
+  int sonuc1;//boş değişken bütün değişkenler için geçerli
   sonuc1 = 333;
 
   print(sonuc1);
 
   //Örnek4:
-  var s1,s2,s3;
+  int s1,s2,s3;
 
   s1 =10;
   s2=20;
@@ -36,7 +36,7 @@ void main(){
   print("$s1 $s2 $s3");// değişkenler sırayla tek satırda atanabilir
 
   int k1=44,k2 = 78;
-  print(" $k1 $k2")
+  print(" $k1 $k2");
 
   //Örnek5:
 
