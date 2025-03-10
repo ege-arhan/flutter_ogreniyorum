@@ -1,0 +1,1 @@
+// bir sınıfın içinden başka bir sınıfa erişmeye yarıyor

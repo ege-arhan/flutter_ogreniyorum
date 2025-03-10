@@ -1,0 +1,1 @@
+//paketler yeni dosya oluştururken directory kısmından oluyor paketler == alt dosyalar gibi birşey
