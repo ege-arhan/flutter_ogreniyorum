@@ -3,4 +3,5 @@
 44.kısım class ödevlerine devam 4.ödev bitti 5ten devam et 45.video. 6 mart 01:02
 50.kısım ödevler ve yani yapılar bitti 51den devam et. 7 mart 02:29
 78.kısıma kadar yapıldı 2 örnek kaldı 79dan devam. Yarın flutter tasarıma kadar gel. 10 mart 06:19
-99.kısım bitti flutter'a giriş yapıldı 10..videodan devam et. 12 mart 03:05
+99.kısım bitti flutter'a giriş yapıldı 100.videodan devam et. 12 mart 03:05
+121.kısım bitti 122'den devam et tasarıma devam. 15 mart 05:46
