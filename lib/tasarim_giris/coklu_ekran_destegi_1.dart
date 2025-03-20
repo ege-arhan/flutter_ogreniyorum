@@ -50,52 +50,55 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Mavikare(),
-            SizedBox(height: 20,),
-            Kirmizikare(),
-            SizedBox(height: 20,),
-            Yazi("merhaba", 30.0)
+          children: [
+            LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints){
+                if(constraints.maxWidth<600){
+                  return DikTasarim();
+                }else{
+                  return YatayTasarim();
+                }
+              }
+            )
           ],
         ),
+      )
+    );
+  }
+}
+
+
+
+class YatayTasarim extends StatelessWidget {
+  const YatayTasarim({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset("resimler/resim2.png"),
+          Text("Deneme orta",style: TextStyle(fontSize: 2.0),)
+        ],
+      ),
+    );
+  }
+}
+class DikTasarim extends StatelessWidget {
+  const DikTasarim({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset("resimler/while_dongusu.png"),
+          Text("Deneme orta",style: TextStyle(fontSize: 20.0),)
+        ],
       ),
     );
   }
 }
 
-
-class Mavikare extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      height: 50,
-      color: Colors.blue,
-    );
-  }
-}
-
-class Kirmizikare extends StatelessWidget {
-  const Kirmizikare({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      height: 50,
-      color: Colors.red,
-    );
-  }
-}
-
-class Yazi extends StatelessWidget {
-  String icerik;
-  double yaziboyutu;
-
-  Yazi(this.icerik, this.yaziboyutu);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(icerik,style: TextStyle(fontSize: yaziboyutu),);
-  }
-}

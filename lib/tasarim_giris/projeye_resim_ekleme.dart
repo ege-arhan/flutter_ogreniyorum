@@ -47,55 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Mavikare(),
-            SizedBox(height: 20,),
-            Kirmizikare(),
-            SizedBox(height: 20,),
-            Yazi("merhaba", 30.0)
-          ],
-        ),
-      ),
+      body: Column(
+        children: [
+          Image.asset("resimler/while_dongusu.png"),
+          Text("deneme")
+        ],
+      )
     );
-  }
-}
-
-
-class Mavikare extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      height: 50,
-      color: Colors.blue,
-    );
-  }
-}
-
-class Kirmizikare extends StatelessWidget {
-  const Kirmizikare({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      height: 50,
-      color: Colors.red,
-    );
-  }
-}
-
-class Yazi extends StatelessWidget {
-  String icerik;
-  double yaziboyutu;
-
-  Yazi(this.icerik, this.yaziboyutu);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(icerik,style: TextStyle(fontSize: yaziboyutu),);
   }
 }
