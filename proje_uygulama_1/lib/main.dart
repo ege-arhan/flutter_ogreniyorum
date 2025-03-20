@@ -36,6 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var ekranBilgisi = MediaQuery.of(context);
+    final double ekranYuksekligi = ekranBilgisi.size.height;
+    final double ekranGenisligi = ekranBilgisi.size.width;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
@@ -43,14 +47,48 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         children: [
-          Image.asset("resimler/stevejobs.png"),
-          Text("Steve Jobs"),
-          Text("Dünyayı değiştirecek insanlar, onu değiştirebileceklerini düşünecek kadar çılgın olanlardır."),
-          ElevatedButton(
-            child: Text("İlham Ver"),
-            onPressed: (){
-              print("İlham verildi !");
-            },
+          Padding(
+            padding:  EdgeInsets.only(top: ekranYuksekligi/100,bottom: ekranYuksekligi/100),
+            child: SizedBox(
+                width: ekranGenisligi/4,
+                child: Image.asset("resimler/stevejobs.png")),
+          ),
+          Text(
+            "Steve Jobs",
+            style: TextStyle(
+            color: Colors.redAccent,
+            fontWeight: FontWeight.bold,
+            fontSize: ekranGenisligi/25
+          ),
+          ),
+          Spacer(),
+          Padding(
+            padding:  EdgeInsets.only(left: ekranGenisligi/100,right: ekranGenisligi/100),
+            child: Text("Dünyayı değiştirecek insanlar, onu değiştirebileceklerini düşünecek kadar çılgın olanlardır.",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: ekranGenisligi/25,
+            ),),
+          ),
+          Spacer(),
+          Padding(
+            padding:  EdgeInsets.only(bottom: ekranGenisligi/100),
+            child: SizedBox(
+              width: ekranGenisligi/2,
+              height: ekranYuksekligi/15,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.redAccent,
+                  foregroundColor: Colors.white,
+                ),
+                child: Text("İlham Ver",style: TextStyle(
+                  fontSize: ekranGenisligi/50,
+                ),),
+                onPressed: (){
+                  print("İlham verildi!");
+                },
+              ),
+            ),
           ),
         ],
       ),
