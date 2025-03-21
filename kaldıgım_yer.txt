@@ -5,4 +5,5 @@
 78.kısıma kadar yapıldı 2 örnek kaldı 79dan devam. Yarın flutter tasarıma kadar gel. 10 mart 06:19
 99.kısım bitti flutter'a giriş yapıldı 100.videodan devam et. 12 mart 03:05
 121.kısım bitti 122'den devam et tasarıma devam. 15 mart 05:46
-128.kısım bitti 129'dan devam et örnek projelere devam 20 mart 07:24
+128.kısım bitti 129'dan devam et örnek projelere devam. 20 mart 07:24
+132.kısım bitti 133'ten devam et "Flutter çalışma yapısı" başla. 21 mart 05:57
