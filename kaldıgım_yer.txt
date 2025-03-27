@@ -7,3 +7,4 @@
 121.kısım bitti 122'den devam et tasarıma devam. 15 mart 05:46
 128.kısım bitti 129'dan devam et örnek projelere devam. 20 mart 07:24
 132.kısım bitti 133'ten devam et "Flutter çalışma yapısı" başla. 21 mart 05:57
+146.kısım bitti 147'den devam et "Flutter widgets" ünitesine başla. 27 mart 08:06
